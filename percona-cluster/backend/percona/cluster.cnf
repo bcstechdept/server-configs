@@ -1,0 +1,11 @@
+[mysqld]
+wsrep_provider=/usr/lib/libgalera_smm.so
+wsrep_cluster_address=gcomm://172.19.0.111,172.19.0.112,172.19.0.113
+binlog_format=ROW
+default_storage_engine=InnoDB
+innodb_autoinc_lock_mode=2
+wsrep_sst_auth="sstuser:pLEH9cWT"
+wsrep_node_address=172.19.0.111
+wsrep_node_name=percona01
+wsrep_sst_method=xtrabackup
+wsrep_cluster_name=bcs_prod_cluster
